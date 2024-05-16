@@ -6,8 +6,8 @@ let transporter = nodemailer.createTransport({
     port: 587, // or 465 for secure
     secure: false, // true for port 465, false for other ports
     auth: {
-        user: 'ala.maamer12@gmail.com', // your email address
-        pass: 'rmhiodmbnxebmykb' // your email password or app password
+        user: '', // your email address
+        pass: '' // your email password or app password
     },
     tls: {
         rejectUnauthorized: false // allow self-signed certificates
@@ -16,8 +16,8 @@ let transporter = nodemailer.createTransport({
 
 // Set up email data with unicode symbols
 let mailOptions = {
-    from: '"alaa" <ala.maamer12@gmail.com>', // sender address
-    to: 'BenSalah.Meriem0@gmail.com', // list of receivers
+    from: '"" <>', // sender address
+    to: '', // list of receivers
     subject: 'Hello ✔', // Subject line
     text: 'Hello world?', // plain text body
     html: '<b>Hello world?</b>' // html body
